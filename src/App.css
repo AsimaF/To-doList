@@ -1,0 +1,126 @@
+
+* {
+    box-sizing:border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
+    
+  }
+  
+  body {
+    background-image: url("./leaf.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+  .todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 520px;
+    min-height: 600px;
+    background: #e0e1dd;
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 25px;
+    padding-bottom: 32px;
+  }
+  
+  h1 {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    color: #556B2F;
+    font-size: 30px;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 300;
+  }
+  
+.complete {
+    text-decoration: line-through;
+    opacity: 0.4;
+}
+  
+  .todo-form {
+    margin-bottom: 40px;
+  }
+  
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    border-radius: 4px 0 0 4px; 
+    border: 2px solid #4f772d;
+    outline: none;
+    width: 320px;
+    background: transparent;
+    color: #4f774f;
+    font-weight: 200;
+  }
+  
+  .todo-input::placeholder {
+    color: #132a13;
+  }
+  
+  .todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: 200;
+    background: linear-gradient(
+      180deg,
+      #556B2F 0%,
+      #01411C 100%
+    );
+    color: #e5e7df;
+    text-transform: capitalize;
+  
+  }
+  
+  .todo-input.edit {
+    border: 2px solid #556B2F;
+  }
+  
+  .todo-button.edit {
+    background: linear-gradient(
+      90deg,
+      #556b2fd5 0%,
+      #01411c91 100%
+    );
+    padding: 16px 22px;
+  }
+  
+  .todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+
+  }
+  
+  .todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: #ffffff;
+    background: linear-gradient(
+      120deg,
+      #4f774f 0%,
+      #132a13 100%
+    );
+  
+    padding: 16px;
+    border-radius: 30px;
+    width: 80%;
+  }
+  
+  .icons {
+    display: flex;
+    align-items: center;
+    font-size: 25px;
+    cursor: pointer;
+    justify-content: flex-end;
+    color: #fff;
+  }
+  
